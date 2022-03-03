@@ -1,0 +1,111 @@
+$primaryColor: #E0FF04;
+$breakpoint-tablet: 950px;
+$breakpoint-smallerTablet:600px;
+.shop{
+  margin-left:10px;
+  .shopList{
+    list-style-type: none;
+    padding-left: 0;
+    width: 90%;
+    height: 100%;
+    margin:0 auto;
+    justify-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    align-items: center;
+    li{
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      width: 30vw;
+      flex: 30%;
+      @media (max-width: 700px) {
+        flex: 40%;
+        height:40vw;
+        width: 40vw;
+      }
+      @media (max-width: $breakpoint-smallerTablet) {
+        flex: 100%;
+        height:80vw;
+        width: 80vw;
+      }
+      height:  30vw;
+      margin: 1vw;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center;
+      .info{
+        cursor:pointer;
+        width: 100%;
+        height: 100%;
+        margin:0 auto;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.418);
+        transition: 0.5s ease;
+        &:hover{
+          background-color: #e2ff048a;
+        }
+        .infoTitle{
+          width: 100%;
+          text-align: center;
+          font-weight: 500;
+          font-size: 2vw;
+          @media (max-width: $breakpoint-tablet) {
+            font-size: 2.5vw;
+          }
+          @media (max-width: $breakpoint-smallerTablet) {
+            font-size: 8vw;
+          }
+          letter-spacing: 0.1rem;
+          color: white;
+        }
+        .infoButton{
+          letter-spacing: 1px;
+          &::after{
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: width .3s;
+          }
+          &:hover{
+            &:after{
+              width: 100%;
+            }
+          }
+          
+          width: 31%;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          font-size: 1vw;
+          align-self: center;
+          color: white;
+          text-align: left;
+          @media (max-width: $breakpoint-tablet) {
+            font-size: 1.5vw;
+            width: 45%;
+          }
+          @media (max-width: 700px) {
+            font-size: 1.5vw;
+            width: 10vw;
+            width: 31%;
+          }
+          @media (max-width: $breakpoint-smallerTablet) {
+            font-size: 3vw;
+          }
+          .infoButtonText{
+            float: right;
+          }
+
+        }
+      }
+    }
+  }
+
+}

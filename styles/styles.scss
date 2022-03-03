@@ -1,0 +1,30 @@
+$primaryColor: #E0FF04;
+$breakpoint-tablet: 950px;
+$breakpoint-smallerTablet:600px;
+@import 'navBar';
+@import 'logoMain';
+@import 'whatAreWeShopping';
+@import 'slider';
+@import 'shop';
+@import 'koiski';
+@import 'footer';
+@import 'buttonDesigns';
+html{
+  width: 100%;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Urbanist', sans-serif !important;
+  font-size: 1vw; 
+  font-style: normal; 
+  font-weight: 400; 
+  scrollbar-width: none;
+  line-height: 19px; 
+  letter-spacing: 0em; 
+  text-align: left;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; 
+}

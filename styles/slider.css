@@ -1,0 +1,219 @@
+.slider {
+  margin-top: 10px;
+  height: 600px;
+}
+
+.slider .product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.slider .product-container {
+  padding: 0 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.slider .product-container .product-card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 4100px;
+  height: 450px;
+  margin-right: 40px;
+}
+
+.slider .product-container .product-card .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+}
+
+.slider .product-container .product-card .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slider .product-container .product-card .info .icon {
+  text-align: right;
+  cursor: pointer;
+}
+
+.slider .product-container .product-card .info .icon i {
+  margin-right: 30px;
+}
+
+.slider .product-container .product-card .info .icon i:focus {
+  color: #ca0000;
+}
+
+.slider .product-container .product-card .info .title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media (max-width: 950px) {
+  .slider .product-container .product-card .info .title {
+    font-size: 2.3vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider .product-container .product-card .info .title {
+    font-size: 4vw;
+  }
+}
+
+.slider .product-container .product-card .info .description {
+  margin: 0.5vw;
+  color: #999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+}
+
+@media (max-width: 950px) {
+  .slider .product-container .product-card .info .description {
+    font-size: 1.8vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider .product-container .product-card .info .description {
+    font-size: 3vw;
+  }
+}
+
+.slider .product-container .product-card .info .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+@media (max-width: 950px) {
+  .slider .product-container .product-card .info .price {
+    font-size: 1.8vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider .product-container .product-card .info .price {
+    font-size: 3vw;
+  }
+}
+
+.slider .product-container .product-card .info .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider .product-container .product-card .info .button button {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-size: 12px;
+  background-color: white;
+  outline: none;
+  border: none;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 3px;
+  -webkit-text-decoration-color: #E0FF04;
+          text-decoration-color: #E0FF04;
+  cursor: pointer;
+}
+
+.slider .product-container .product-card .info .button button i {
+  visibility: hidden;
+  text-decoration: none;
+}
+
+.slider .product-container .product-card .info .button button:hover {
+  text-decoration: none;
+  background-color: #E0FF04;
+}
+
+@media (max-width: 950px) {
+  .slider .product-container .product-card .info .button button {
+    font-size: 1.8vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider .product-container .product-card .info .button button {
+    font-size: 3vw;
+  }
+}
+
+.slider .pre-btn, .slider .nxt-btn {
+  font-size: 40px;
+  font-weight: 100;
+  border: none;
+  width: 10vw;
+  height: 400px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  color: #E0FF04;
+  z-index: 1;
+}
+
+.slider .pre-btn {
+  left: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.slider .nxt-btn {
+  right: 0;
+}
+
+.slider .pre-btn img, .slider .nxt-btn img {
+  opacity: 0.2;
+}
+
+.slider .pre-btn:hover img, .slider .nxt-btn:hover img {
+  opacity: 1;
+}
+/*# sourceMappingURL=slider.css.map */

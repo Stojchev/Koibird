@@ -1,0 +1,353 @@
+.navBar {
+  width: 100%;
+}
+
+.navBar .topNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.navBar .topNav .leftNav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.navBar .topNav .leftNav .leftNavInput {
+  padding-left: 25px;
+  background: url("https://cdn1.iconfinder.com/data/icons/thin-ui-1/100/Noun_Project_100Icon_1px_grid_thin_ic_cookie-512.png") no-repeat left;
+  background-size: 25px;
+  margin: 0;
+  height: 30px;
+  width: 30%;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: 0;
+}
+
+@media (max-width: 600px) {
+  .navBar .topNav .leftNav .leftNavInput {
+    background-size: 15px;
+  }
+}
+
+.navBar .topNav .leftNav .leftNavInput:focus {
+  border-bottom: 1px solid black;
+}
+
+.navBar .topNav .centerNav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navBar .topNav .centerNav img {
+  width: 80%;
+}
+
+.navBar .topNav .rightNav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 0.7vw;
+  letter-spacing: 0.1em;
+}
+
+.navBar .topNav .rightNav .rightNavText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-weight: 600;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 600px) {
+  .navBar .topNav .rightNav .rightNavText {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+}
+
+.navBar .topNav .rightNav .rightNavText .rightNavTextRegister {
+  cursor: pointer;
+  position: relative;
+  padding-right: 1vw;
+}
+
+@media (max-width: 950px) {
+  .navBar .topNav .rightNav .rightNavText .rightNavTextRegister {
+    font-size: 1vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .navBar .topNav .rightNav .rightNavText .rightNavTextRegister {
+    font-size: 2vw;
+  }
+}
+
+.navBar .topNav .rightNav .rightNavText .rightNavTextRegister::after {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  left: 100%;
+  right: 0;
+  height: 80%;
+  border-right: 1px solid black;
+  z-index: -1;
+}
+
+@media (max-width: 600px) {
+  .navBar .topNav .rightNav .rightNavText .rightNavTextRegister::after {
+    border: none;
+    border-right: 0.5px solid black;
+  }
+}
+
+.navBar .topNav .rightNav .rightNavText .rightNavTextMyAccount {
+  margin-left: 1vw;
+  cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  .navBar .topNav .rightNav .rightNavText .rightNavTextMyAccount {
+    font-size: 1vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .navBar .topNav .rightNav .rightNavText .rightNavTextMyAccount {
+    font-size: 2vw;
+  }
+}
+
+.navBar .topNav .rightNav .rightNavIcons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 600px) {
+  .navBar .topNav .rightNav .rightNavIcons {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+.navBar .topNav .rightNav .rightNavIcons i {
+  margin-right: 2vw;
+}
+
+@media (max-width: 600px) {
+  .navBar .topNav .rightNav .rightNavIcons i {
+    margin: 0.5vw;
+  }
+}
+
+.navBar .topNav .rightNav .rightNavIcons .rightNavIconsImage {
+  width: 1.5vw;
+  margin-left: 2vw;
+}
+
+@media (max-width: 600px) {
+  .navBar .topNav .rightNav .rightNavIcons .rightNavIconsImage {
+    margin: 0.5vw;
+    width: 2vw;
+  }
+}
+
+.navBar .bottomNav {
+  width: 70%;
+  margin: 10px auto 0 auto;
+  letter-spacing: 0.1em;
+  height: 50px;
+}
+
+@media (max-width: 600px) {
+  .navBar .bottomNav {
+    width: 90%;
+  }
+}
+
+@media (max-width: 950px) {
+  .navBar .bottomNav {
+    width: 80%;
+  }
+}
+
+.navBar .bottomNav .bottomNavList {
+  margin-left: 0;
+  padding-left: 0;
+  height: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1vw;
+  width: 100%;
+}
+
+@media (max-width: 950px) {
+  .navBar .bottomNav .bottomNavList {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navBar .bottomNav .bottomNavList {
+    font-size: 2vw;
+    text-align: center;
+  }
+}
+
+.navBar .bottomNav .bottomNavList li {
+  overflow: hidden;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.navBar .bottomNav .bottomNavList .bottomNavListDropDown {
+  width: 100%;
+}
+
+.navBar .bottomNav .bottomNavList .bottomNavListDropDown .bottomNavListDropDownHover {
+  text-decoration: none;
+  color: black;
+}
+
+.navBar .bottomNav .bottomNavList .bottomNavListDropDown .bottomNavListDropDownHider {
+  position: absolute;
+  width: 40%;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  width: 500px;
+  z-index: 1;
+  padding-left: 0;
+  margin-top: 420px;
+  padding-top: 0px;
+}
+
+@media (max-width: 600px) {
+  .navBar .bottomNav .bottomNavList .bottomNavListDropDown .bottomNavListDropDownHider {
+    width: 100px;
+    top: -260px;
+  }
+}
+
+@media (max-width: 950px) {
+  .navBar .bottomNav .bottomNavList .bottomNavListDropDown .bottomNavListDropDownHider {
+    width: 400px;
+    margin-top: 400px;
+  }
+}
+
+.navBar .bottomNav .bottomNavList .bottomNavListDropDown .bottomNavListDropDownHider ul {
+  float: left;
+  width: 40%;
+  padding-left: 0;
+  margin: 20px;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .navBar .bottomNav .bottomNavList .bottomNavListDropDown .bottomNavListDropDownHider ul {
+    width: 30%;
+    margin: 2px;
+  }
+}
+
+@media (max-width: 950px) {
+  .navBar .bottomNav .bottomNavList .bottomNavListDropDown .bottomNavListDropDownHider ul {
+    width: 40%;
+  }
+}
+
+.navBar .bottomNav .bottomNavList .bottomNavListDropDown .bottomNavListDropDownHider ul li {
+  font-size: 1vw;
+  text-align: left;
+}
+
+.navBar .bottomNav .bottomNavList .bottomNavListDropDown .bottomNavListDropDownHider ul li a {
+  margin: 4px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .navBar .bottomNav .bottomNavList .bottomNavListDropDown .bottomNavListDropDownHider ul li a {
+    margin: 0;
+    font-size: 1.8vw;
+  }
+}
+
+.navBar .bottomNav .bottomNavList .bottomNavListDropDown .bottomNavListDropDownHider ul li a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 3px;
+  -webkit-text-decoration-color: #E0FF04;
+          text-decoration-color: #E0FF04;
+}
+/*# sourceMappingURL=navBar.css.map */

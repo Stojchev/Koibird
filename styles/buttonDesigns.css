@@ -1,0 +1,240 @@
+.svg-wrapper {
+  margin-top: 0;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#shape {
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: white;
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+#text {
+  margin-top: -35px;
+  text-align: center;
+}
+
+#text a {
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+@media (max-width: 950px) {
+  #text a {
+    font-size: 1.8vw;
+  }
+}
+
+@media (max-width: 600px) {
+  #text a {
+    font-size: 3vw;
+  }
+}
+
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 5px;
+  stroke-dashoffset: 0;
+  stroke: #E0FF04;
+}
+
+.button2 {
+  width: 50%;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.button2:hover {
+  border: 1px solid transparent;
+}
+
+.button2:hover span {
+  position: absolute;
+  display: block;
+}
+
+.button2:hover span:nth-child(1) {
+  -webkit-filter: hue-rotate(0deg);
+          filter: hue-rotate(0deg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#E0FF04));
+  background: linear-gradient(90deg, transparent, #E0FF04);
+  -webkit-animation: animate1 1s linear infinite;
+          animation: animate1 1s linear infinite;
+}
+
+@-webkit-keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.button2:hover span:nth-child(2) {
+  -webkit-filter: hue-rotate(60deg);
+          filter: hue-rotate(60deg);
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(white));
+  background: linear-gradient(180deg, transparent, white);
+  -webkit-animation: animate2 1s linear infinite;
+          animation: animate2 1s linear infinite;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+@-webkit-keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.button2:hover span:nth-child(3) {
+  -webkit-filter: hue-rotate(120deg);
+          filter: hue-rotate(120deg);
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#E0FF04));
+  background: linear-gradient(270deg, transparent, #E0FF04);
+  -webkit-animation: animate3 1s linear infinite;
+          animation: animate3 1s linear infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@-webkit-keyframes animate3 {
+  0% {
+    right: -100%;
+    height: 3px;
+  }
+  50%,
+  100% {
+    height: 2px;
+    right: 100%;
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+    height: 3px;
+  }
+  50%,
+  100% {
+    height: 2px;
+    right: 100%;
+  }
+}
+
+.button2:hover span:nth-child(4) {
+  -webkit-filter: hue-rotate(300deg);
+          filter: hue-rotate(300deg);
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(white));
+  background: linear-gradient(360deg, transparent, white);
+  -webkit-animation: animate4 1s linear infinite;
+          animation: animate4 1s linear infinite;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+@-webkit-keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #E0FF04;
+}
+
+#myBtn:hover {
+  background-color: #E0FF04;
+  color: black;
+}
+/*# sourceMappingURL=buttonDesigns.css.map */

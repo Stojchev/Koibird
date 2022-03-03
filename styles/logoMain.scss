@@ -1,0 +1,61 @@
+$primaryColor: #E0FF04;
+$breakpoint-tablet: 950px;
+$breakpoint-smallerTablet:600px;
+.logoMain{
+  margin-top:10px;
+  height: 92vh;
+  padding: 0;
+  background: url('../images/Screen\ Shot\ 2018-05-24\ at\ 09.45.24\ 2background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  .logoMainWrapper{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+
+    .logoMainWrapperText{
+      text-align: right;
+      margin-bottom: 60px;
+      margin-top:20px;
+      font-size: 1vw;
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 3vw;
+      }
+      @media (max-width: $breakpoint-smallerTablet) {
+        font-size: 4vw;
+      }
+      letter-spacing: 0.1rem;
+      color:white;
+      text-shadow:
+      -1px -1px 0 rgba(0, 0, 0, 0.425),
+      1px -1px 0 rgba(0, 0, 0, 0.425),
+      -1px 1px 0 rgba(0, 0, 0, 0.425),
+      1px 1px 0 rgba(0, 0, 0, 0.425);
+      font-weight: 300;
+
+        i{
+          color:pink;
+          outline: none;
+        }
+    }
+    .logoMainBannerLogo{
+      img{
+        width: 50%;
+        @media (max-width: $breakpoint-tablet) {
+          width: 70%;
+        }
+        @media (max-width: $breakpoint-smallerTablet) {
+          width: 90%;
+        }
+        float: right;
+      }
+    }
+
+  }
+
+}

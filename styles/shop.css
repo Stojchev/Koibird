@@ -1,0 +1,161 @@
+.shop {
+  margin-left: 10px;
+}
+
+.shop .shopList {
+  list-style-type: none;
+  padding-left: 0;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop .shopList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  width: 30vw;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  height: 30vw;
+  margin: 1vw;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+@media (max-width: 700px) {
+  .shop .shopList li {
+    -webkit-box-flex: 40%;
+        -ms-flex: 40%;
+            flex: 40%;
+    height: 40vw;
+    width: 40vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .shop .shopList li {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    height: 80vw;
+    width: 80vw;
+  }
+}
+
+.shop .shopList li .info {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.418);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.shop .shopList li .info:hover {
+  background-color: #e2ff048a;
+}
+
+.shop .shopList li .info .infoTitle {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2vw;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+
+@media (max-width: 950px) {
+  .shop .shopList li .info .infoTitle {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .shop .shopList li .info .infoTitle {
+    font-size: 8vw;
+  }
+}
+
+.shop .shopList li .info .infoButton {
+  letter-spacing: 1px;
+  width: 31%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+  text-align: left;
+}
+
+.shop .shopList li .info .infoButton::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.shop .shopList li .info .infoButton:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 950px) {
+  .shop .shopList li .info .infoButton {
+    font-size: 1.5vw;
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .shop .shopList li .info .infoButton {
+    font-size: 1.5vw;
+    width: 10vw;
+    width: 31%;
+  }
+}
+
+@media (max-width: 600px) {
+  .shop .shopList li .info .infoButton {
+    font-size: 3vw;
+  }
+}
+
+.shop .shopList li .info .infoButton .infoButtonText {
+  float: right;
+}
+/*# sourceMappingURL=shop.css.map */

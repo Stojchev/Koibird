@@ -1,0 +1,65 @@
+$primaryColor: #E0FF04;
+$breakpoint-tablet: 950px;
+$breakpoint-smallerTablet:600px;
+.whatAreWeShopping{
+  height: 100px;
+  width: 100% +10px;
+  background-color: $primaryColor;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .text{
+    font-size:1.5vw;
+    font-weight: 700;
+    letter-spacing: 0.1em; 
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 2vw;
+    }
+    @media (max-width: $breakpoint-smallerTablet) {
+      font-size: 3vw;
+    }
+  }
+}
+
+.mainNew{
+  height: 100px;
+  width: 100% +10px;
+  margin-top: 50px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  .text{
+    position: relative;
+    display: inline-block;
+    font-size:1.5vw;
+    font-weight:500;
+    letter-spacing: 0.1em; 
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 2vw;
+    }
+    @media (max-width: $breakpoint-smallerTablet) {
+      font-size: 3vw;
+    }
+    &::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 3px solid $primaryColor;
+    width:5000px; 
+    margin: 0 20px;
+    right: 100%;
+    }
+    &::after{
+      content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 3px solid $primaryColor;
+    width:5000px; 
+    margin: 0 20px;
+    left: 100%;
+    }
+  }
+}

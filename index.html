@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://kit.fontawesome.com/2261b6a0b0.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;400;500;700;900&family=Work+Sans:wght@100&display=swap"
+    rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <title>Koibird</title>
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+  <div class="navBar">
+    <div class="topNav">
+      <div class="leftNav">
+        <input type="text" class="leftNavInput">
+      </div>
+      <div class="centerNav">
+        <img src="./images/LOGO.png">
+      </div>
+      <div class="rightNav">
+        <div class="rightNavText">
+          <div class="rightNavTextRegister">
+            Register
+          </div>
+          <div class="rightNavTextMyAccount">
+            My account
+          </div>
+        </div>
+        <div class="rightNavIcons">
+          <i class="fa-regular fa-heart fa-2xl" class="rightNavIcon"></i>
+          <i class="fa-solid fa-bag-shopping fa-2xl"></i>
+        </div>
+      </div>
+    </div>
+    <div class="bottomNav">
+      <ul class="bottomNavList">
+        <li>
+          SHOP BY CATEGORY
+        </li>
+        <li class="bottomNavListDropDown" onmouseover="hover()" onmouseout="removeHover()">
+          <a href="#" class="bottomNavListDropDownHover">
+            SHOP BY BRAND
+          </a>
+          <ul class="bottomNavListDropDownHider">
+            <ul>
+              <li><a href="#">ANAKIKI</a></li>
+              <li><a href="#">ANNE WEST</a></li>
+              <li><a href="#">BACON CLOTHING</a></li>
+              <li><a href="#">BLACK CROWS</a></li>
+              <li><a href="#">BLANCHA</a></li>
+              <li><a href="#">CANCELLATO</a></li>
+              <li><a href="#">CORDOVA</a></li>
+              <li><a href="#">FUSALP</a></li>
+              <li><a href="#">I LOVE MR MITTENS</a></li>
+              <li><a href="#">IENKI IENKI</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">LE KILT</a></li>
+              <li><a href="#">LINGUA FRANCA</a></li>
+              <li><a href="#">MORPHO AND LUNA</a></li>
+              <li><a href="#">NASTAHA ZINKO</a></li>
+              <li><a href="#">PERFECT MOMENT</a></li>
+              <li><a href="#">SPENCER VLADIMIR</a></li>
+              <li><a href="#">STAND</a></li>
+              <li><a href="#">WILD AND WOOLY</a></li>
+              <li><a href="#">WOOLY BOOLY</a></li>
+              <li><a href="#">BLACK CROWS</a></li>
+            </ul>
+          </ul>
+        </li>
+        <li>
+          SHOP BY COLLECTION
+        </li>
+        <li>
+          ABOUT KOIBIRD
+        </li>
+        <li style="width: 90%;">
+          POP UP SHOP
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="logoMain">
+    <div class="logoMainWrapper">
+      <div class="logoMainBannerLogo">
+        <img src="./images/BANNER LOGOasd.png">
+      </div>
+      <div class="logoMainWrapperText">
+        <span>
+          BEAUTY AND THE PISTE
+        </span>
+        <i class="fa-solid fa-angles-right"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="whatAreWeShopping">
+    <p class="text">WHAT ARE WE SHOPPING NOW</p>
+  </div>
+
+  <div class="mainNew">
+    <p class="text">NEW IN</p>
+  </div>
+  <div class="slider">
+    <button class="pre-btn"> <i class="fa-solid fa-angle-right"></i></button>
+    <button class="nxt-btn"> <i class="fa-solid fa-angle-right"></i></button>
+    <div class="product-container">
+      <div class="product-card">
+        <div class="image">
+          <img src="./images/number1.png">
+        </div>
+        <div class="info">
+          <span class="icon">
+            <i class="fa-solid fa-heart  fa-xl" id="heart"></i>
+          </span>
+          <span class="title">
+            BLACK JACKET
+          </span>
+          <span class="description">
+            Gucci
+          </span>
+          <span class="price">
+            £000
+          </span>
+          <span class="button">
+            <div class="svg-wrapper">
+              <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="150" />
+                <div id="text">
+                  <a href=""><span class="spot"></span>SHOP NOW</a>
+                </div>
+              </svg>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="image">
+          <img src="./images/number2.png">
+        </div>
+        <div class="info">
+          <span class="icon">
+            <i class="fa-solid fa-heart  fa-xl" id="heart"></i>
+          </span>
+          <span class="title">
+            WHITE JACKET
+          </span>
+          <span class="description">
+            Bacon Clothing
+          </span>
+          <span class="price">
+            £000
+          </span>
+          <span class="button">
+            <div class="svg-wrapper">
+              <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="150" />
+                <div id="text">
+                  <a href=""><span class="spot"></span>SHOP NOW</a>
+                </div>
+              </svg>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="image">
+          <img src="./images/number3.png">
+        </div>
+        <div class="info">
+          <span class="icon">
+            <i class="fa-solid fa-heart  fa-xl" id="heart"></i>
+          </span>
+          <span class="title">
+            YELLOW JACKET
+          </span>
+          <span class="description">
+            Annakiki
+          </span>
+          <span class="price">
+            £000
+          </span>
+          <span class="button">
+            <div class="svg-wrapper">
+              <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="150" />
+                <div id="text">
+                  <a href=""><span class="spot"></span>SHOP NOW</a>
+                </div>
+              </svg>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="image">
+          <img src="./images/number4.png">
+        </div>
+        <div class="info">
+          <span class="icon">
+            <i class="fa-solid fa-heart  fa-xl" id="heart"></i>
+          </span>
+          <span class="title">
+            CAMOUFLAGE JACKET
+          </span>
+          <span class="description">
+            Black Crows
+          </span>
+          <span class="price">
+            £000
+          </span>
+          <span class="button">
+            <div class="svg-wrapper">
+              <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="150" />
+                <div id="text">
+                  <a href=""><span class="spot"></span>SHOP NOW</a>
+                </div>
+              </svg>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="shop">
+    <ul class="shopList">
+      <li style="background-image: url(./images/imageList1.png);">
+        <div class="info">
+          <h1 class="infoTitle">
+            OUTERWEAR
+          </h1>
+          <button class="infoButton">
+            SHOP NOW
+            <span class="infoButtonText"><i class="fa-solid fa-angle-right"></i></span>
+          </button>
+        </div>
+      </li>
+      <li style="background-image: url(./images/imageList2.png);">
+        <div class="info">
+          <h1 class="infoTitle">
+            SKIS
+          </h1>
+          <button class="infoButton">
+            SHOP NOW
+            <span class="infoButtonText"><i class="fa-solid fa-angle-right"></i></span>
+          </button>
+        </div>
+      </li>
+      <li style="background-image: url(./images/imageList3.png);">
+        <div class="info">
+          <h1 class="infoTitle">
+            KNITWEAR
+          </h1>
+          <button class="infoButton">
+            SHOP NOW
+            <span class="infoButtonText"><i class="fa-solid fa-angle-right"></i></span>
+          </button>
+        </div>
+      </li>
+
+      <li style="background-image: url(./images/imageList4.png);">
+        <div class="info">
+          <h1 class="infoTitle">
+            ACCESSORIES
+          </h1>
+          <button class="infoButton">
+            SHOP NOW
+            <span class="infoButtonText"><i class="fa-solid fa-angle-right"></i></span>
+          </button>
+        </div>
+      </li>
+      <li style="background-image: url(./images/imageList5.png);">
+        <div class="info">
+          <h1 class="infoTitle">
+            GOOGLES
+          </h1>
+          <button class="infoButton">
+            SHOP NOW
+            <span class="infoButtonText"><i class="fa-solid fa-angle-right"></i></span>
+          </button>
+        </div>
+      </li>
+      <li style="background-image: url(./images/imageList6.png);">
+        <div class="info">
+          <h1 class="infoTitle">
+            JACKTES
+          </h1>
+          <button class="infoButton">
+            SHOP NOW
+            <span class="infoButtonText"><i class="fa-solid fa-angle-right"></i></span>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <div class="mainNew">
+    <p class="text">BEST SELLERS</p>
+  </div>
+  <div class="slider">
+    <button class="pre-btn">></button>
+    <button class="nxt-btn">></button>
+    <div class="product-container">
+      <div class="product-card">
+        <div class="image">
+          <img src="./images/imageSlider1.png">
+        </div>
+        <div class="info">
+          <span class="icon">
+            <i class="fa-solid fa-heart  fa-xl" id="heart"></i>
+          </span>
+          <span class="title">
+            PINK JACKET
+          </span>
+          <span class="description">
+            Gucci
+          </span>
+          <span class="price">
+            £000
+          </span>
+          <span class="button">
+            <div class="svg-wrapper">
+              <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="150" />
+                <div id="text">
+                  <a href=""><span class="spot"></span>SHOP NOW</a>
+                </div>
+              </svg>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="image">
+          <img src="./images/imageSlider2.png">
+        </div>
+        <div class="info">
+          <span class="icon">
+            <i class="fa-solid fa-heart  fa-xl" id="heart"> </i>
+          </span>
+          <span class="title">
+            PINK KNIT BEANIE
+          </span>
+          <span class="description">
+            Bacon Clothing
+          </span>
+          <span class="price">
+            £000
+          </span>
+          <span class="button">
+            <div class="svg-wrapper">
+              <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="150" />
+                <div id="text">
+                  <a href=""><span class="spot"></span>SHOP NOW</a>
+                </div>
+              </svg>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="image">
+          <img src="./images/imageSlider3.png">
+        </div>
+        <div class="info">
+          <span class="icon">
+            <i class="fa-solid fa-heart  fa-xl" id="heart"> </i>
+          </span>
+          <span class="title">
+            GOLD GLOVES
+          </span>
+          <span class="description">
+            Annakiki
+          </span>
+          <span class="price">
+            £000
+          </span>
+          <span class="button">
+            <div class="svg-wrapper">
+              <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="150" />
+                <div id="text">
+                  <a href=""><span class="spot"></span>SHOP NOW</a>
+                </div>
+              </svg>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="image">
+          <img src="./images/imageSlider4.png">
+        </div>
+        <div class="info">
+          <span class="icon">
+            <i class="fa-solid fa-heart  fa-xl" id="heart"></i>
+          </span>
+          <span class="title">
+            CREAM HANDBAG
+          </span>
+          <span class="description">
+            Black Crows
+          </span>
+          <span class="price">
+            £000
+          </span>
+          <span class="button">
+            <div class="svg-wrapper">
+              <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="150" />
+                <div id="text">
+                  <a href=""><span class="spot"></span>SHOP NOW</a>
+                </div>
+              </svg>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="koiski">
+    <div class="text">
+      <span>#KOISKI</span>
+    </div>
+    <ul>
+      <li><img src="./images/2bbbd169675b210d40480266ff686092asd.png" alt=""></li>
+      <li><img src="./images/2c34c5ee47b42df10dc57819a70785fcasd.png" alt=""></li>
+      <li><img src="./images/9457929fe18d58f98d25f457d41c8ef7.png" alt=""></li>
+      <li><img src="./images/imageList4.png" alt=""></li>
+      <li><img src="./images/imageList3.png" alt=""></li>
+      <li><img src="./images/70s.png" alt=""></li>
+    </ul>
+    <ul>
+      <li><img src="./images/DZAlTmIUMAEWWY2.png" alt=""></li>
+      <li><img src="./images/La-doudoune-en-1967.png" alt=""></li>
+      <li><img src="./images/photo-hans-feurer-bogner-ski-clothing-1980-1.png" alt=""></li>
+      <li><img src="./images/VIm5V05x_o.png" alt=""></li>
+      <li><img src="./images/imageList1.png" alt=""></li>
+      <li><img src="./images/imageList6.png" alt=""></li>
+    </ul>
+  </div>
+
+
+  <div class="footer">
+
+    <div class="leftFooter">
+      <div class="leftFooterImage">
+        <img src="./images/LOGO.png">
+      </div>
+      <div class="leftFooterList">
+        <ul>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">TERMS & CONDITIONS</a></li>
+          <li><a href="">PRIVACY POLICY</a></li>
+          <li><a href="">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rightFooter">
+      <span class="signInText">SIGN UP FOR OUR NEWSLETTER</span>
+      <input type="email" class="input">
+      <span class="checkboxInput">
+        <input type="checkbox"> GDPR tick box GDRP tick box GDRP tick box GDRP tick box GDRP tick box
+      </span>
+      <button>SUBMIT<i class="fa-solid fa-angle-right"></i></button>
+    </div>
+  </div>
+</body>
+<script src="javaScript.js"></script>
+
+</html>

@@ -1,5 +1,6 @@
 .navBar {
   width: 100%;
+  background-color: white;
 }
 
 .navBar .topNav {
@@ -23,7 +24,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 10px;
+}
+
+.navBar .topNav .leftNav i {
+  display: none;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 0;
+}
+
+@media (max-width: 950px) {
+  .navBar .topNav .leftNav i {
+    display: inline;
+  }
 }
 
 .navBar .topNav .leftNav .leftNavInput {
@@ -214,15 +227,9 @@
   height: 50px;
 }
 
-@media (max-width: 600px) {
-  .navBar .bottomNav {
-    width: 90%;
-  }
-}
-
 @media (max-width: 950px) {
   .navBar .bottomNav {
-    width: 80%;
+    display: none;
   }
 }
 
@@ -349,5 +356,52 @@
   text-decoration-thickness: 3px;
   -webkit-text-decoration-color: #E0FF04;
           text-decoration-color: #E0FF04;
+}
+
+#mobiveNavBar {
+  width: 60%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  margin-top: -30px;
+  -webkit-transition: 5s ease-in-out;
+  transition: 5s ease-in-out;
+  display: none;
+  background-color: #E0FF04;
+  position: absolute;
+  z-index: 20;
+}
+
+@media (max-width: 600px) {
+  #mobiveNavBar {
+    width: 100%;
+  }
+}
+
+#mobiveNavBar .mobiveNavBarList #XonNavBar {
+  cursor: pointer;
+}
+
+#mobiveNavBar .mobiveNavBarList li {
+  list-style-type: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#mobiveNavBar .mobiveNavBarList li a {
+  text-decoration: none;
+  color: black;
+  font-size: 3vw;
+  margin: 10px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+#mobiveNavBar .mobiveNavBarList li a:hover {
+  border-bottom: 1px solid black;
+}
+
+#mobiveNavBar .mobiveNavBarList li #bottomNavListDropDownHider {
+  display: none;
 }
 /*# sourceMappingURL=navBar.css.map */

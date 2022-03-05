@@ -15,14 +15,13 @@
   height: 100%;
   overflow-x: auto;
   scroll-behavior: smooth;
-  scrollbar-width: none;
 }
 
 .slider .product-container .product-card {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  width: 4100px;
+  width: 400px;
   height: 450px;
   margin-right: 40px;
 }

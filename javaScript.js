@@ -52,3 +52,26 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+function displayNav(){
+  console.log('raote')
+  const asd=document.getElementById("mobiveNavBar");
+  asd.style.display='inline-block'
+  document.body.style.overflowY='hidden'
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  // console.log( document.getElementsByTagName("body"))
+  // document.getElementsByTagName("body").style.overflow = "hidden"
+}
+function hideNav(){
+  console.log('raote')
+  const asd=document.getElementById("mobiveNavBar");
+  asd.style.display='none'
+  document.body.style.overflowY='visible'
+}
+function displayListFull(){
+  console.log('stige')
+  const asd=document.getElementById("bottomNavListDropDownHider");
+  if(window.getComputedStyle(asd).display == "none")
+    asd.style.display='block'
+  else asd.style.display=='none'
+}

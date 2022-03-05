@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.css?v=2">
   <script src="https://kit.fontawesome.com/2261b6a0b0.js" crossorigin="anonymous"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;400;500;700;900&family=Work+Sans:wght@100&display=swap"
@@ -14,11 +14,39 @@
   <title>Koibird</title>
 </head>
 
-<body>
+<body style="position: relative;">
+
+  <div id="mobiveNavBar">
+    <ul class="mobiveNavBarList">
+        <i class="fa-solid fa-x fa-2xl" id="XonNavBar" onclick="hideNav()"></i>
+        <li><a href="">SHOP BY CATEGORY</a></li>
+        <li><a href="#" onclick="displayListFull()">SHOP BY BRAND</a>
+            <div id="bottomNavListDropDownHider">
+              <ul>
+                <li><a href="#">ANAKIKI</a></li>
+                <li><a href="#">ANNE WEST</a></li>
+                <li><a href="#">BACON CLOTHING</a></li>
+                <li><a href="#">BLACK CROWS</a></li>
+                <li><a href="#">BLANCHA</a></li>
+                <li><a href="#">CANCELLATO</a></li>
+                <li><a href="#">CORDOVA</a></li>
+                <li><a href="#">FUSALP</a></li>
+                <li><a href="#">I LOVE MR MITTENS</a></li>
+                <li><a href="#">IENKI IENKI</a></li>
+              </ul>
+              </div>
+        </li>
+      <li><a href="">SHOP BY COLLECTION</a></li>
+      <li><a href="">ABOUT KOIBIRD</a></li>
+      <li><a href="">POP UP SHOP</a></li>
+    </ul>
+  </div>
+
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
   <div class="navBar">
     <div class="topNav">
       <div class="leftNav">
+        <i class="fa-solid fa-bars fa-xl" id="buttonSlider" onclick="displayNav()"></i>
         <input type="text" class="leftNavInput">
       </div>
       <div class="centerNav">

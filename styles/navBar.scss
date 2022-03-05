@@ -233,7 +233,10 @@ $breakpoint-smallerTablet:600px;
   }
 }
 #mobiveNavBar{
-
+  h3{
+    font-size: 3.2vw;
+    text-align: center;
+  }
   width: 60%;
   @media (max-width: $breakpoint-smallerTablet) {
     width: 100%;
@@ -247,6 +250,9 @@ $breakpoint-smallerTablet:600px;
   background-color: $primaryColor;
   position: absolute;
   z-index: 20;
+  #XonNavBar{
+    margin: 20px;
+  }
   .mobiveNavBarList{
     #XonNavBar{
       cursor: pointer;
@@ -258,7 +264,7 @@ $breakpoint-smallerTablet:600px;
       a{
         text-decoration: none;
         color: black;
-        font-size: 3vw;
+        font-size: 2.5vw;
         margin: 10px;
         transition: 1s ease;
         &:hover{

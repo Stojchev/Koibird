@@ -372,10 +372,19 @@
   z-index: 20;
 }
 
+#mobiveNavBar h3 {
+  font-size: 3.2vw;
+  text-align: center;
+}
+
 @media (max-width: 600px) {
   #mobiveNavBar {
     width: 100%;
   }
+}
+
+#mobiveNavBar #XonNavBar {
+  margin: 20px;
 }
 
 #mobiveNavBar .mobiveNavBarList #XonNavBar {
@@ -391,7 +400,7 @@
 #mobiveNavBar .mobiveNavBarList li a {
   text-decoration: none;
   color: black;
-  font-size: 3vw;
+  font-size: 2.5vw;
   margin: 10px;
   -webkit-transition: 1s ease;
   transition: 1s ease;
